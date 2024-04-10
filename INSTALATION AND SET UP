@@ -1,32 +1,27 @@
                                           ------INSTALATION AND SET UP------
 
+1.React_Router:Instalation: npm create vite@latest name-of-my-project -- --template react
+  : cd name-of-my-project
+  : npm install react-router-dom localforage match-sorter sort-by
+  : npm run dev ( It's common for everithing ) 
+ Import in main.jsx: import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 
-			    1.React_Router: 
- 
-						Instalation: npm create vite@latest name-of-my-project -- --template react
-											 : cd name-of-my-project
-											 : npm install react-router-dom localforage match-sorter sort-by
-											 : npm run dev ( It's common for everithing ) 
-		 Import in main.jsx: import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+  :  const router = createBrowserRouter([
+	{
+          path: "/",
+	  element: <Root></Root>,
+	  errorElement: <ErrorPage />,
+          children:[
+	   {
+	    path: "/",
+            element: <Home />
+            },													
+	     },
+	  ]);
 
- 											 :  const router = createBrowserRouter([
-													  {
-													    path: "/",
-													    element: <Root></Root>,
-															errorElement: <ErrorPage />,
-															children:[
-															{
-																path: "/",
-        												element: <Home />,		
-															},
-															]
-															
-													  },
-													]);
+           : <RouterProvider router={router} /> (Replace it in => <App/>)
 
-                        : <RouterProvider router={router} /> (Replace it in => <App/>)
-
-              ----REACT ROUTER MORE EXAMPLE----- : https://github.com/remix-run/react-router/tree/dev/examples
+         ----REACT ROUTER MORE EXAMPLE----- : https://github.com/remix-run/react-router/tree/dev/examples
 
           2. Tailwind CSS Package:  npm install -D tailwindcss postcss autoprefixer 
                                     npx tailwindcss init -p
