@@ -89,8 +89,40 @@
                                     <Line type="monotone" dataKey="uv" stroke="#8884d8" />
                                   </LineChart>
                                 );
-          
+          9. React AOS Package: npm install aos --save
+			      : <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> 
+			      : <script src="bower_components/aos/dist/aos.js"></script>
+			  then: <div data-aos="animation_name">
 
+         10. date and time: Momment.js
+		
+
+	 11. Animate.css: 
+		install: npm install animate.css --save
+		         import 'animate.css';
+	     Basic Usages:<h1 class="animate__animated animate__bounce">Hello World</h1>
+         12. React Leaflet (This is use for MAP: ): npm install react react-dom leaflet
+                          : npm install react-leaflet
+			  : import { MapContainer } from 'react-leaflet/MapContainer'
+			    import { TileLayer } from 'react-leaflet/TileLayer'
+			    import { useMap } from 'react-leaflet/hooks'
+
+			  : npm install -D @types/leaflet
+	    Live Server   : <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+			  <TileLayer
+			    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+			  />
+			  <Marker position={[51.505, -0.09]}>
+			    <Popup>
+			      A pretty CSS3 popup. <br /> Easily customizable.
+			    </Popup>
+			  </Marker>
+			</MapContainer>
+		
+
+       13. React Hook : npm install react-hook-form
+		 <a href="https://react-hook-form.com/">Click here to visit website</a>
 
 
 
